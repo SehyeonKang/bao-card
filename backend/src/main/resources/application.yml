@@ -1,6 +1,19 @@
 spring:
   application:
     name: backend
+    # DB Setting
+  datasource:
+    url: jdbc:mysql://localhost:3306/baocard?serverTimezone=Asia/Seoul&useUniCode=yes&characterEncoding=UTF-8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: ${MYSQL_ROOT_PASSWORD}
+    jpa:
+      properties:
+        hibernate:
+          ddl-auto: update
+          show_sql: true
+          format_sql: true
+
 
 openai:
   model: gpt-3.5-turbo
