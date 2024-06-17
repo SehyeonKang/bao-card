@@ -1,5 +1,6 @@
 package com.bao.baocard.modules.member.model.service;
 
+import com.bao.baocard.modules.member.model.Authority;
 import com.bao.baocard.modules.member.model.Member;
 import com.bao.baocard.modules.member.model.repository.MemberRepository;
 import lombok.RequiredArgsConstructor;
@@ -17,7 +18,7 @@ public class MemberService {
         if (memberRepository.existsByEmail(email)) {
             throw new IllegalArgumentException("이미 존재하는 이메일입니다.");
         }
-        Member member = new Member(email, password, nickname);
+        Member member = new Member(email, password, nickname, Authority.ROLE_USER);
         return memberRepository.save(member);
     }
 }

@@ -1,6 +1,7 @@
 package com.bao.baocard.modules.member.model;
 
 import jakarta.persistence.*;
+import lombok.Builder;
 import lombok.Getter;
 
 @Entity
@@ -16,11 +17,16 @@ public class Member {
     private String password;
     private String nickname;
 
+    @Enumerated(EnumType.STRING)
+    private Authority authority;
+
     protected Member() {}
 
-    public Member(String email, String password, String nickname) {
+    @Builder
+    public Member(String email, String password, String nickname, Authority authority) {
         this.email = email;
         this.password = password;
         this.nickname = nickname;
+        this.authority = authority;
     }
 }
