@@ -19,7 +19,7 @@ public class MemberController {
 
     @PostMapping("/register")
     public ResponseEntity<Member> register(@RequestBody MemberRegistrationRequest request) {
-        Member member = memberService.registerMember(request.getLoginId(), request.getPassword(), request.getNickname());
+        Member member = memberService.registerMember(request.getEmail(), request.getPassword(), request.getNickname());
         return ResponseEntity.ok(member);
     }
 }

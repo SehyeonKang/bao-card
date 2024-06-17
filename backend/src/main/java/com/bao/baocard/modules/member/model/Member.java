@@ -12,14 +12,14 @@ public class Member {
     @Column(name = "member_id")
     private Long id;
 
-    private String loginId;
+    private String email;
     private String password;
     private String nickname;
 
     protected Member() {}
 
-    public Member(String loginId, String password, String nickname) {
-        this.loginId = loginId;
+    public Member(String email, String password, String nickname) {
+        this.email = email;
         this.password = password;
         this.nickname = nickname;
     }

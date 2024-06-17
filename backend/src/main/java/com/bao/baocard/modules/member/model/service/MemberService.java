@@ -13,11 +13,11 @@ public class MemberService {
     private final MemberRepository memberRepository;
 
     @Transactional
-    public Member registerMember(String loginId, String password, String nickname) {
-        if (memberRepository.existsByLoginId(loginId)) {
-            throw new IllegalArgumentException("이미 존재하는 로그인 ID입니다.");
+    public Member registerMember(String email, String password, String nickname) {
+        if (memberRepository.existsByEmail(email)) {
+            throw new IllegalArgumentException("이미 존재하는 이메일입니다.");
         }
-        Member member = new Member(loginId, password, nickname);
+        Member member = new Member(email, password, nickname);
         return memberRepository.save(member);
     }
 }
