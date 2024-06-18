@@ -1,4 +1,4 @@
-package com.bao.baocard.modules.jwt;
+package com.bao.baocard.modules.jwt.model;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;

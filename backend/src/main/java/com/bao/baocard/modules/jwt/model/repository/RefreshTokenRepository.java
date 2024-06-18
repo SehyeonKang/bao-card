@@ -1,6 +1,6 @@
-package com.bao.baocard.modules.jwt.repository;
+package com.bao.baocard.modules.jwt.model.repository;
 
-import com.bao.baocard.modules.jwt.RefreshToken;
+import com.bao.baocard.modules.jwt.model.RefreshToken;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

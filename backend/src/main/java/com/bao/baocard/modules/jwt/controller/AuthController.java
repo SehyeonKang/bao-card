@@ -1,10 +1,10 @@
 package com.bao.baocard.modules.jwt.controller;
 
-import com.bao.baocard.modules.jwt.dto.MemberRequestDto;
-import com.bao.baocard.modules.jwt.dto.MemberResponseDto;
-import com.bao.baocard.modules.jwt.dto.TokenDto;
-import com.bao.baocard.modules.jwt.dto.TokenRequestDto;
-import com.bao.baocard.modules.jwt.service.AuthService;
+import com.bao.baocard.modules.jwt.model.dto.MemberRequestDto;
+import com.bao.baocard.modules.jwt.model.dto.MemberResponseDto;
+import com.bao.baocard.modules.jwt.model.dto.TokenDto;
+import com.bao.baocard.modules.jwt.model.dto.TokenRequestDto;
+import com.bao.baocard.modules.jwt.model.service.AuthService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;

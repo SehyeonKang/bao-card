@@ -1,4 +1,4 @@
-package com.bao.baocard.modules.jwt.service;
+package com.bao.baocard.modules.jwt.model.service;
 
 import com.bao.baocard.modules.member.model.Member;
 import com.bao.baocard.modules.member.model.repository.MemberRepository;

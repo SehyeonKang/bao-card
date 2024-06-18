@@ -1,4 +1,4 @@
-package com.bao.baocard.modules.jwt;
+package com.bao.baocard.modules.jwt.model;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

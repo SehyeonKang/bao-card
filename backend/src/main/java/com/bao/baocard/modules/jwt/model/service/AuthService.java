@@ -1,12 +1,12 @@
-package com.bao.baocard.modules.jwt.service;
+package com.bao.baocard.modules.jwt.model.service;
 
-import com.bao.baocard.modules.jwt.RefreshToken;
-import com.bao.baocard.modules.jwt.TokenProvider;
-import com.bao.baocard.modules.jwt.dto.MemberRequestDto;
-import com.bao.baocard.modules.jwt.dto.MemberResponseDto;
-import com.bao.baocard.modules.jwt.dto.TokenDto;
-import com.bao.baocard.modules.jwt.dto.TokenRequestDto;
-import com.bao.baocard.modules.jwt.repository.RefreshTokenRepository;
+import com.bao.baocard.modules.jwt.model.RefreshToken;
+import com.bao.baocard.modules.jwt.model.TokenProvider;
+import com.bao.baocard.modules.jwt.model.dto.MemberRequestDto;
+import com.bao.baocard.modules.jwt.model.dto.MemberResponseDto;
+import com.bao.baocard.modules.jwt.model.dto.TokenDto;
+import com.bao.baocard.modules.jwt.model.dto.TokenRequestDto;
+import com.bao.baocard.modules.jwt.model.repository.RefreshTokenRepository;
 import com.bao.baocard.modules.member.model.Member;
 import com.bao.baocard.modules.member.model.repository.MemberRepository;
 import lombok.RequiredArgsConstructor;

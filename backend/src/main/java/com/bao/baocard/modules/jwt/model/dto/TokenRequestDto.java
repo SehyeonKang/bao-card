@@ -1,4 +1,4 @@
-package com.bao.baocard.modules.jwt.dto;
+package com.bao.baocard.modules.jwt.model.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -1,4 +1,4 @@
-package com.bao.baocard.modules.jwt.dto;
+package com.bao.baocard.modules.jwt.model.dto;
 
 import com.bao.baocard.modules.member.model.Authority;
 import com.bao.baocard.modules.member.model.Member;

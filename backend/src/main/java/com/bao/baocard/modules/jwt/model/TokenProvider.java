@@ -1,6 +1,6 @@
-package com.bao.baocard.modules.jwt;
+package com.bao.baocard.modules.jwt.model;
 
-import com.bao.baocard.modules.jwt.dto.TokenDto;
+import com.bao.baocard.modules.jwt.model.dto.TokenDto;
 import io.jsonwebtoken.*;
 import io.jsonwebtoken.io.Decoders;
 import io.jsonwebtoken.security.Keys;

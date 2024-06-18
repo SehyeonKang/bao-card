@@ -1,7 +1,7 @@
 package com.bao.baocard.infra.config;
 
-import com.bao.baocard.modules.jwt.JwtFilter;
-import com.bao.baocard.modules.jwt.TokenProvider;
+import com.bao.baocard.modules.jwt.model.JwtFilter;
+import com.bao.baocard.modules.jwt.model.TokenProvider;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.config.annotation.SecurityConfigurerAdapter;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
