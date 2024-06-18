@@ -18,12 +18,13 @@ public class MemberRequestDto {
     private String nickname;
 
     public Member toMember(PasswordEncoder passwordEncoder) {
-        return Member.builder()
+        Member member = Member.builder()
                 .email(email)
                 .password(passwordEncoder.encode(password))
                 .nickname(nickname)
                 .authority(Authority.ROLE_USER)
                 .build();
+        return member;
     }
 
     public UsernamePasswordAuthenticationToken toAuthentication() {
