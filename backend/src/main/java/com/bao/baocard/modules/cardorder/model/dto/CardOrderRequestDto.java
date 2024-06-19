@@ -2,8 +2,10 @@ package com.bao.baocard.modules.cardorder.model.dto;
 
 import lombok.Data;
 
+import java.util.List;
+
 @Data
 public class CardOrderRequestDto {
 
-    private Long cardId;
+    private List<Long> cardIds;
 }
