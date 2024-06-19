@@ -1,7 +1,7 @@
 spring:
   application:
     name: backend
-    # DB Setting
+  # DB Setting
   datasource:
     url: jdbc:mysql://localhost:3306/baocard?serverTimezone=Asia/Seoul&useUniCode=yes&characterEncoding=UTF-8
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -11,15 +11,21 @@ spring:
       properties:
         hibernate:
           ddl-auto: update
-          show_sql: true
-          format_sql: true
 
+# JWT Setting
 jwt:
   secret:
     key: c3ByaW5nLWJvb3Qtc2VjdXJpdHktand0LXR1dG9yaWFsLWppd29vbi1zcHJpbmctYm9vdC1zZWN1cml0eS1qd3QtdHV0b3JpYWwK
 
+# OpenAI Setting
 openai:
   model: gpt-3.5-turbo
   api:
     key: ${OPENAI_SECRET_KEY}
     url: https://api.openai.com/v1/chat/completions
+
+#p6spy log Setting
+decorator:
+  datasource:
+    p6spy:
+      enable-logging: true
