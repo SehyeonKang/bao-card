@@ -1,32 +1,27 @@
 package com.bao.baocard.modules.openai.controller;
 
-import com.bao.baocard.modules.openai.model.ChatGPTRequest;
-import com.bao.baocard.modules.openai.model.ChatGPTResponse;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
+import com.bao.baocard.modules.openai.model.service.OpenAiService;
+import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.client.RestTemplate;
 
 @RestController
+@RequiredArgsConstructor
 @RequestMapping("/openai")
 public class OpenAiController {
 
-    @Value("${openai.model}")
-    private String model;
-
-    @Value("${openai.api.url}")
-    private String apiUrl;
-
-    @Autowired
-    private RestTemplate restTemplate;
+    private final OpenAiService openAiService;
 
     @GetMapping("/chat")
     public String chat(@RequestParam(name = "prompt") String prompt) {
-        ChatGPTRequest request = new ChatGPTRequest(model, prompt);
-        ChatGPTResponse response = restTemplate.postForObject(apiUrl, request, ChatGPTResponse.class);
-        return response.getChoices().get(0).getMessage().getContent();
+        return openAiService.chat(prompt);
+    }
+
+    @GetMapping("/recommend-card")
+    public String recommendCard(@RequestParam(name = "place") String place,
+                                @RequestParam(name = "amount") int amount) {
+        return openAiService.recommendCard(place, amount);
     }
 }

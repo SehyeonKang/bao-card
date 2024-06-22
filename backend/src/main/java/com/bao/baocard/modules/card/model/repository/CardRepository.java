@@ -1,6 +1,6 @@
 package com.bao.baocard.modules.card.model.repository;
 
-import com.bao.baocard.modules.card.Card;
+import com.bao.baocard.modules.card.model.Card;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;

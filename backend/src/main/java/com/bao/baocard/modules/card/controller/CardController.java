@@ -1,6 +1,6 @@
 package com.bao.baocard.modules.card.controller;
 
-import com.bao.baocard.modules.card.Card;
+import com.bao.baocard.modules.card.model.Card;
 import com.bao.baocard.modules.card.model.service.CardService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;

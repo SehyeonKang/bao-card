@@ -28,7 +28,6 @@ public class Member {
     @Enumerated(EnumType.STRING)
     private Authority authority;
 
-    @JsonIgnore
     @OneToMany(mappedBy = "member", cascade = CascadeType.ALL)
     private List<CardOrder> cardOrders = new ArrayList<>();
 

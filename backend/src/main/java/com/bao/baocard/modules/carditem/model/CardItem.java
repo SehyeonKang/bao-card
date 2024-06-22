@@ -1,8 +1,7 @@
 package com.bao.baocard.modules.carditem.model;
 
-import com.bao.baocard.modules.card.Card;
+import com.bao.baocard.modules.card.model.Card;
 import com.bao.baocard.modules.cardorder.CardOrder;
-import com.bao.baocard.modules.member.model.Member;
 import jakarta.persistence.*;
 import lombok.AccessLevel;
 import lombok.Getter;

@@ -15,4 +15,10 @@ public class ChatGPTRequest {
         this.model = model;
         this.messages.add(new Message("user", prompt));
     }
+
+    public ChatGPTRequest(String model, String systemPrompt, String userPrompt) {
+        this.model = model;
+        this.messages.add(new Message("system", systemPrompt));
+        this.messages.add(new Message("user", userPrompt));
+    }
 }

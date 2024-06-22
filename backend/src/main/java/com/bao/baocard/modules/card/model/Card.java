@@ -1,4 +1,4 @@
-package com.bao.baocard.modules.card;
+package com.bao.baocard.modules.card.model;
 
 import jakarta.persistence.*;
 import lombok.AccessLevel;

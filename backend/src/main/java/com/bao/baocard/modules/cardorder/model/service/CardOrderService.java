@@ -1,7 +1,7 @@
 package com.bao.baocard.modules.cardorder.model.service;
 
 import com.bao.baocard.infra.util.SecurityUtils;
-import com.bao.baocard.modules.card.Card;
+import com.bao.baocard.modules.card.model.Card;
 import com.bao.baocard.modules.card.model.repository.CardRepository;
 import com.bao.baocard.modules.carditem.model.CardItem;
 import com.bao.baocard.modules.cardorder.CardOrder;
